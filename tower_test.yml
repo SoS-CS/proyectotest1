@@ -1,0 +1,19 @@
+- name: Pruebas variadas
+  hosts: all
+  tasks:
+    - name: Instalamos paquetes necesarios
+      package:
+        name: "{{ item }}"
+        state: present 
+        #Whether to install (present), or remove (absent) a package. 
+        #Other states depend on the underlying package module, i.e latest.
+      loop:
+        - git
+        - tree
+        - apache2
+        - wget
+        - curl
+        - apt-transport-https 
+        - ca-certificates
+        - gnupg-agent
+        - software-properties-common 

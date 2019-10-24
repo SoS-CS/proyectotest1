@@ -14,4 +14,19 @@
         - apt-transport-https 
         - ca-certificates
         - gnupg-agent
-        - software-properties-common 
+        - software-properties-common
+        
+    - name: Updating host using apt
+      apt:
+        update_cache: yes
+        upgrade: dist
+  
+    #- name: Update kernel to spefic version
+      #apt:
+      #  name: "{{ k_ver }}"
+      #  state: latest
+    
+    - name: Clean unwanted olderstuff
+      apt:
+        autoremove: yes
+        purge: yes

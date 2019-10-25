@@ -14,6 +14,11 @@
         - ca-certificates
         - gnupg-agent
         - software-properties-common
+        - thunderbird
+        - thunderbird-locale-es
+        - davmail
+        - firefox
+        - firefox-locale-es
         
     - name: Updating host using apt
       apt:

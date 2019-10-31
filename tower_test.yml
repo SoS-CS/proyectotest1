@@ -35,7 +35,7 @@
         - exfat-utils 
         - hfsplus 
         - hfsutils 
-        - ntfs-3ghttps://www.linuxmint.com/start/tina/https://www.linuxmint.com/start/tina/
+        - ntfs-3g
         
     - name: Updating host using apt
       apt:
